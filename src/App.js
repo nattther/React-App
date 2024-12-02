@@ -24,9 +24,11 @@ function App() {
   return (
     <div className="App">
       <Title myMessage={appInfo.Message}></Title>
+      <div className="inputComponentContainer">
       <InputComponent title='Limite Value' onChangeHandler={setLimiteValue}/>
       <InputComponent title='Min Value' onChangeHandler={setMinValue}/>
       <InputComponent title='Max Value' onChangeHandler={setMaxValue}/>
+      </div>
       <CounterContainer>
         <Counter {...counterConstants} />
       </CounterContainer>
