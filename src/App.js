@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Title from './Title';
 import Counter from './Counter';
+import CounterContainer from './CounterContainer';
 
 function App() {
 
@@ -18,7 +19,10 @@ function App() {
   return (
     <div className="App">
       <Title myMessage={appInfo.Message}></Title>
+      <CounterContainer>
       <Counter {...counterConstants}/>
+        </CounterContainer>
+
     </div>
   );
 }
