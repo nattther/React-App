@@ -1,3 +1,9 @@
 .inputContainer{
-    background-color: blue;
+    display: flex;
+    flex: row;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
 }
