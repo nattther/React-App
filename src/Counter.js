@@ -39,7 +39,7 @@ function Counter({ ...props }) {
         {" "}
         Decrement Counter{" "}
       </button>
-      {counter !== limiteValue && (
+      {counter !== Number(limiteValue) && (
         <>
           {" "}
           {isOver ? (
