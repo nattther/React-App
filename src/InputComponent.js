@@ -4,10 +4,10 @@ function InputComponent({title ,onChangeHandler}){
 
     return(<>
     <div  className={styles.inputContainer}>
-          <p>{title}</p>
+          <p>{title} : </p>
           <input type="number" onChange={(e) => onChangeHandler(e.target.value)}></input>
           </div>
     </>)
 }
 
-export default InputComponent
+export default InputComponent;
