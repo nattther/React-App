@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Title from './Title';
 
 function App() {
-  const myMessage = "HELLO WORLD"
+  const Message = "HELLO WORLD"
   return (
     <div className="App">
-      <p> {myMessage}</p>
-      <img src={logo} className='App-logo' alt='logo'/>*
-      <p> {myMessage}</p>
+      <Title myMessage={Message}></Title>
+      <img src={logo} className='App-logo' alt='logo'/>
     </div>
   );
 }
