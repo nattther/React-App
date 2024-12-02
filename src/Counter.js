@@ -28,7 +28,7 @@ function Counter({limiteValue , maxValue , minValue}) {
     <>
       <p>{counter}</p>
       <button disabled={counter >=maxValue}  onClick={increment}> Increment Counter </button>
-      <button onClick={decrement}> Decrement Counter </button>
+      <button disabled={counter <= minValue} onClick={decrement}> Decrement Counter </button>
       {counter !== limiteValue && (
         <>
           {" "}
