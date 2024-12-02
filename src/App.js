@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import Title from './Title';
+import Counter from './Counter';
 
 function App() {
-  const Message = "HELLO WORLD"
+  const Message = "Mon compteur"
   return (
     <div className="App">
       <Title myMessage={Message}></Title>
-      <img src={logo} className='App-logo' alt='logo'/>
+      <Counter/>
     </div>
   );
 }
