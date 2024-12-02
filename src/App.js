@@ -9,16 +9,16 @@ function App() {
     Name: 'mon app',
     Message: 'mon compteur'
   }
-  const valueInfo = {
-    min: 0,
-    limite: 5,
-    max: 10
+  const counterConstants = {
+    minValue: 0,
+    limiteValue: 5,
+    maxValue: 10
   }
 
   return (
     <div className="App">
       <Title myMessage={appInfo.Message}></Title>
-      <Counter minValue={valueInfo.min} limiteValue={valueInfo.limite} maxValue = {valueInfo.max} />
+      <Counter {...counterConstants}/>
     </div>
   );
 }
