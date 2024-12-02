@@ -4,11 +4,21 @@ import Title from './Title';
 import Counter from './Counter';
 
 function App() {
-  const Message = "Mon compteur"
+
+  const appInfo = {
+    Name: 'mon app',
+    Message: 'mon compteur'
+  }
+  const valueInfo = {
+    min: 0,
+    limite: 5,
+    max: 10
+  }
+
   return (
     <div className="App">
-      <Title myMessage={Message}></Title>
-      <Counter/>
+      <Title myMessage={appInfo.Message}></Title>
+      <Counter minValue={valueInfo.min} limiteValue={valueInfo.limite} maxValue = {valueInfo.max} />
     </div>
   );
 }
