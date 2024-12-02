@@ -1,6 +1,9 @@
 import { useState } from "react";
 
-function Counter({limiteValue , maxValue , minValue}) {
+function Counter({...props}) {
+    const limiteValue = props.limiteValue
+    const maxValue = props.maxValue
+    const minValue = props.minValue
   const [counter, setCounter] = useState(0);
   const [isOver, setIsOver] = useState(false);
 
