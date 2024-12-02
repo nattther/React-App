@@ -34,11 +34,11 @@ function App() {
     <div className="App">
       <Title myMessage={appInfo.Message}></Title>
       <p>Limite value</p>
-      <input onChange={onChangeLimiteValueInput}></input>
+      <input type="number" onChange={onChangeLimiteValueInput}></input>
       <p>Min value</p>
-      <input onChange={onChangeMinValueInput}></input>
+      <input type="number"  onChange={onChangeMinValueInput}></input>
       <p>Max value</p>
-      <input onChange={onChangeMaxValueInput}></input>
+      <input type="number"  onChange={onChangeMaxValueInput}></input>
       <CounterContainer>
         <Counter {...counterConstants} />
       </CounterContainer>
