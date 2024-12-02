@@ -4,6 +4,7 @@ import Title from "./Title";
 import Counter from "./Counter";
 import CounterContainer from "./CounterContainer";
 import { useState } from "react";
+import InputComponent from "./InputComponent";
 
 function App() {
   const [limiteValue, setLimiteValue] = useState(5);
@@ -33,12 +34,9 @@ function App() {
   return (
     <div className="App">
       <Title myMessage={appInfo.Message}></Title>
-      <p>Limite value</p>
-      <input type="number" onChange={onChangeLimiteValueInput}></input>
-      <p>Min value</p>
-      <input type="number"  onChange={onChangeMinValueInput}></input>
-      <p>Max value</p>
-      <input type="number"  onChange={onChangeMaxValueInput}></input>
+      <InputComponent title='Limite Value' onChangeHandler={onChangeLimiteValueInput}/>
+      <InputComponent title='Min Value' onChangeHandler={onChangeMinValueInput}/>
+      <InputComponent title='Max Value' onChangeHandler={onChangeMaxValueInput}/>
       <CounterContainer>
         <Counter {...counterConstants} />
       </CounterContainer>
