@@ -21,22 +21,12 @@ function App() {
     maxValue: maxvalue,
   };
 
-  const onChangeLimiteValueInput = (e) => {
-    setLimiteValue(e.target.value);
-  };
-  const onChangeMinValueInput = (e) => {
-    setMinValue(e.target.value);
-  };
-  const onChangeMaxValueInput = (e) => {
-    setMaxValue(e.target.value);
-  };
-
   return (
     <div className="App">
       <Title myMessage={appInfo.Message}></Title>
-      <InputComponent title='Limite Value' onChangeHandler={onChangeLimiteValueInput}/>
-      <InputComponent title='Min Value' onChangeHandler={onChangeMinValueInput}/>
-      <InputComponent title='Max Value' onChangeHandler={onChangeMaxValueInput}/>
+      <InputComponent title='Limite Value' onChangeHandler={setLimiteValue}/>
+      <InputComponent title='Min Value' onChangeHandler={setMinValue}/>
+      <InputComponent title='Max Value' onChangeHandler={setMaxValue}/>
       <CounterContainer>
         <Counter {...counterConstants} />
       </CounterContainer>
