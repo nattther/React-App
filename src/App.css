@@ -1,6 +1,11 @@
 .App {
   text-align: center;
+  border: 1px solid #282c34;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); 
+  margin-inline: 2rem ;
+  margin-top: 2rem;
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -27,6 +32,12 @@
 .App-link {
   color: #61dafb;
 }
+
+.inputComponentContainer{
+    display: flex;
+    flex : row;
+}
+
 
 @keyframes App-logo-spin {
   from {
