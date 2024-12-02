@@ -8,14 +8,12 @@ function Counter() {
     const newValue = counter + 1;
     setCounter(newValue);
     isOver5Setter(newValue);
-
   };
 
   const decrement = () => {
     const newValue = counter - 1;
     setCounter(newValue);
     isOver5Setter(newValue);
-
   };
 
   const isOver5Setter = (newValue) => {
@@ -26,15 +24,21 @@ function Counter() {
     }
   };
 
-
   return (
     <>
       <p>{counter}</p>
       <button onClick={increment}> Increment Counter </button>
       <button onClick={decrement}> Decrement Counter </button>
-      { counter !== 5 &&
-       <> {isOver5 ?  <p>Mon compteur est au dessus de 5 </p> : <p> Mon compteur est en dessous de 5 </p>} </>
-       }
+      {counter !== 5 && (
+        <>
+          {" "}
+          {isOver5 ? (
+            <p>Mon compteur est au dessus de 5 et sa valeur est {counter} </p>
+          ) : (
+            <p> Mon compteur est en dessous de 5 </p>
+          )}{" "}
+        </>
+      )}
     </>
   );
 }
