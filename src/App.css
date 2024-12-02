@@ -36,6 +36,7 @@
 .inputComponentContainer{
     display: flex;
     flex : row;
+    flex-wrap: wrap;
 }
 
 
