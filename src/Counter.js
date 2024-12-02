@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "./Counter.module.css";
 
 function Counter({ ...props }) {
   //const limiteValue = props.limiteValue;
@@ -31,6 +32,7 @@ function Counter({ ...props }) {
   return (
     <>
       <p>{counter}</p>
+      <div className={styles.buttonContainer}>
       <button disabled={counter >= maxValue} onClick={increment}>
         {" "}
         Increment Counter{" "}
@@ -39,6 +41,7 @@ function Counter({ ...props }) {
         {" "}
         Decrement Counter{" "}
       </button>
+      </div>
       {counter !== Number(limiteValue) && (
         <>
           {" "}
